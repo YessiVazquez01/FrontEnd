@@ -1,0 +1,795 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Barra de navegación*/
+.navbar{
+	z-index: 10000;
+}
+.list-group{
+	--bs-list-group-bg: transparent;
+}
+/*Barra de navegación - Pagina info*/
+.segundoList-group-item:hover{
+	background-image: radial-gradient(circle at 50% 89.96%, #c6f0ff 0, #9cd3ef 25%, #6cb4d8 50%, #3095c2 75%, #007aae 100%);
+}
+.fa-user-xmark{
+	cursor: pointer; 
+}
+/*Pagina Info*/
+.fondo{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/fondo2.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	overflow-x:hidden;
+}
+/*Banner*/
+#banner{
+	margin-top: -90px;
+	width: 82rem;
+	height: 40rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/banner3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 115%;
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+	border-bottom: 3px solid #000;
+}
+#banner::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 45vh;
+}
+/*Nombre*/
+.contenido-banner{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	position: relative;
+	top:23%;
+}
+.contenido-banner h1{
+	text-align: center;
+}
+.contenido-banner h3{
+	text-align: center;
+}
+.contenido-banner h1,  .contenido-banner h3{
+	font-family: 'Shadows Into Light', cursive;
+	color:white;
+}
+.contenido-banner h1{
+	font-size: 50px;
+}
+.contenido-banner h3{
+	font-size: 35px
+}
+/*Foto de perfil*/
+.presentacion{
+  	display: flex;
+  	flex-direction: column;
+}
+.img{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.foto{
+	align-self: center;
+	position: absolute;
+	top: 45%;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #000;
+}
+/*CAJA*/
+
+.caja{
+	margin: 0 auto;
+	width: 65%;
+	color: white;
+	background:rgba(0,0,0,0.8);
+}
+/*Acerca de mi*/
+#informacion{
+	width: 100%;
+  	display: flex;
+  	justify-content: center;
+}
+#informacion h3{
+	font-family: 'Stalemate', cursive;
+	font-size: 60px;
+	font-weight: bold;
+}
+#informacion p{
+	padding: 20px 60px;
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 20px;
+}
+/*Experiencia*/
+#experiencia{
+	width: 100%;
+  	display: flex;
+  	justify-content: center;
+}
+#experiencia h3{
+	font-family: 'Stalemate', cursive;
+	font-size: 60px;
+	font-weight: bold;
+}
+#experiencia p{
+	padding: 20px 60px;
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 20px;
+}
+/*Educacion*/
+#educacion{
+	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color:#000;
+}
+#educacion h3{
+	font-family: 'Stalemate', cursive;
+	font-size: 60px;
+	font-weight: bold;
+}
+#educacion .card{
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 15px;
+}
+#educacion .card-title{
+	font-family: serif; , cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+#educacion .col-md-4{
+	display: flex;
+    align-items: center;
+}
+/*Hard & soft skill*/
+.habilidades h3{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	font-family: 'Stalemate', cursive;
+	font-size: 60px;
+	font-weight: bold;
+}
+.habilidad h4{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-family: 'Rock Salt', cursive;
+}
+.porcentaje{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.container{
+	position: relative;
+	width: 930px;
+	display: flex;
+	justify-content: space-around;
+}
+.container .card{
+	position: relative;
+	width: 200px;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 280px;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	transition: 0.5s;
+	margin-top: 23px;
+}
+.container .card:hover{
+	transform: translate(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.container .card::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -50;
+	width: 100%;
+	height: 100%;
+	background: white;
+	pointer-events: none;
+	z-index: 1;
+}
+.porcent{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #fff;
+	background: rgb(255,255,255);
+	z-index: 1000;
+}
+.porcent .number{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.porcent .number h6{
+	color:#000;
+	font-weight: 700;
+	font-size: 30px;
+	transition: 0.5s;
+}
+.card:hover .porcent .number h6{
+	color:rgb(0,0,0);
+}
+.porcent .number h6 span{
+	color:rgb(0,0,0);
+}
+.text{
+	position: relative;
+	color:rgb(0,0,0);
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+.text2{
+	position: relative;
+	color:rgb(0,0,0);
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transform: rotate(-90deg)!important;
+}
+svg circle{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #e79595a2;
+	stroke-width:10;
+	stroke-linecap: round !important;
+	transform: translate(5px, 5px);
+}
+/*Calculo para simular el porcentaje*/
+svg circle:nth-child(2){
+	stroke-dasharray: 440;
+	stroke-dasharray: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card:nth-child(2) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card:nth-child(3) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card svg circle:nth-child(4) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card svg circle:nth-child(5) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card svg circle:nth-child(6) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card svg circle:nth-child(7) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+.card svg circle:nth-child(8) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440*var(--porcentaje))/100);
+	stroke: rgb(255,0,0);
+}
+/*Proyectos*/
+#proyecto{
+	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color:#000;
+  	padding-bottom: 40px;
+}
+#proyecto h3{
+	font-family: 'Stalemate', cursive;
+	font-size: 60px;
+	font-weight: bold;
+}
+#proyecto .card{
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 15px;
+}
+#proyecto .col-md-4{
+	display: flex;
+    align-items: center;
+}
+#proyecto .card-title{
+	font-family: serif; , cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+#proyecto .btn{
+	background-color: purple;
+	color: white;
+}
+/*Footer*/
+#footer {
+	margin-top: 20px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	color:white;
+}
+/*boton de edicion de banner - nombre - foto de perfil*/
+.cursor{
+	cursor: pointer;
+}
+.cursor:hover{
+	-webkit-box-shadow: 5px 5px 40px 30px rgba(127, 179, 213,0.7), inset 0px 0px 0px 46px rgba(139,139,139,0.64); 
+  	box-shadow: 5px 5px 40px 30px rgba(127, 179, 213,0.7), inset 0px 0px 0px 46px rgba(139,139,139,0.64);
+}
+.fs-5{
+	align-self: center !important;
+	color:#000;
+}
+.modal-footer{
+	align-self: center;
+}
+/*boton de edicion de Acerca de mi*/
+.edit-info{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.lapizDos{
+	align-self: flex-start;
+	position: absolute;
+	top: 110%;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+.lapizDos:hover{
+	color:#007aae !important;
+}
+.form-floating{
+	color:#000;
+}
+/*boton de edicion de Experiencia*/
+.edit-exp{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.lapizTres{
+	align-self: flex-start;
+	position: absolute;
+	top: 180%;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+.mb-3{
+	color:#000;
+}
+.lapizTres:hover{
+	color:#007aae !important;
+}
+/*boton de edicion de Educacion*/
+.edit-educ{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.lapizCuatro{
+	align-self: flex-start;
+	position: absolute;
+	top: 250%;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+.lapizCuatro:hover{
+	color:#007aae !important;
+}
+/*boton de edicion de Hard & soft skill*/
+.edit-hard{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.lapizCinco{
+	align-self: flex-start;
+	position: absolute;
+	top: 340%;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+.lapizCinco:hover{
+	color:#007aae !important;
+}
+/*boton de edicion de Proyectos*/
+.edit-proy{
+	display: flex;
+  	flex-direction: column;
+  	align-self: center;
+}
+.lapizSeis{
+	align-self: flex-start;
+	position: absolute;
+	top: 535%;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+.lapizSeis:hover{
+	color:#007aae !important;
+}
+/*Diseño de los botones editar*/
+.guardar{
+	background-image: radial-gradient(circle at 51.25% 50%, #b7e5fd 0, #94cdeb 25%, #6cb4d8 50%, #3e9bc6 75%, #0084b5 100%);
+	color: #000;
+}
+.eliminar{
+	background-image: radial-gradient(circle at 54.59% 102.48%, #ff8149 0, #ff7047 16.67%, #fe5a42 33.33%, #f23c3c 50%, #e50837 66.67%, #da0036 83.33%, #d20039 100%);
+	color: #000;
+}
+.guardar:hover{
+	background-image: radial-gradient(circle at 51.25% 50%, #b7e5fd 0, #94cdeb 25%, #6cb4d8 50%, #3e9bc6 75%, #0084b5 100%);
+	color: #000;
+}
+.eliminar:hover{
+	background-image: radial-gradient(circle at 54.59% 102.48%, #ff8149 0, #ff7047 16.67%, #fe5a42 33.33%, #f23c3c 50%, #e50837 66.67%, #da0036 83.33%, #d20039 100%);
+	color: #000;
+}
+.cerrar, .cerrar:hover{
+	background-image: radial-gradient(circle at 51.25% 50%, #b7e5fd 0, #94cdeb 25%, #6cb4d8 50%, #3e9bc6 75%, #0084b5 100%);
+	color: #000;
+}
+/*Responsive*/
+/*INFO*/
+@media all and (min-width: 320px) and (max-width: 767px){
+	/*Barra de navegación - Pagina info*/
+	.container-fluid{
+		flex-wrap: initial !important;
+	}
+	.list-group-horizontal {
+    	flex-direction: row;
+    	padding-left: 400px;
+	}
+	.nav2{
+    	flex-direction: row;
+    	padding-left: 5px;
+	}
+	.logo1{
+		padding-left: 4px;
+	}
+	/*Banner*/
+	#banner{
+		margin-top: -139px;
+		width: 33rem;
+		height: 34rem;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/banner3.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 47%;
+		border-bottom-right-radius: 5%;
+		border-bottom-left-radius: 5%;
+		border-bottom: 3px solid #000;
+	}
+	#banner::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 45vh;
+	}
+	/*Nombre*/
+	.contenido-banner{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		top:28%;
+	}
+	.contenido-banner h1{
+		font-size: 40px;
+	}
+	.contenido-banner h3{
+		font-size: 25px
+	}
+	/*Foto de perfil*/
+	.presentacion{
+	  	display: flex;
+	  	flex-direction: column;
+	}
+	.img{
+		display: flex;
+	  	flex-direction: column;
+	  	align-self: center;
+	}
+	.foto{
+		align-self: center;
+		position: absolute;
+		top: 22%;
+		left: 47%;
+		width: 150px;
+		height: 150px;
+		border: 2px solid #000;
+	}
+	.fondo{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/fondo2.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		overflow-x:hidden;
+	}
+	/*CAJA*/
+	.caja{
+		margin-left: 13%;
+		width: 100%;
+		color: white;
+		background:rgba(0,0,0,0.8);
+	}
+	/*Acerca de mi*/
+	#informacion{
+		width: 100%;
+	  	display: flex;
+	  	justify-content: center;
+	}
+	#informacion h3{
+		font-family: 'Stalemate', cursive;
+		font-size: 60px;
+		font-weight: bold;
+	}
+	#informacion p{
+		padding: 20px 60px;
+		text-align: center;
+		font-family: 'Kalam', cursive;
+		font-size: 20px;
+	}
+	/*Experiencia*/
+	#experiencia{
+		width: 100%;
+	  	display: flex;
+	  	justify-content: center;
+	}
+	#experiencia h3{
+		font-family: 'Stalemate', cursive;
+		font-size: 60px;
+		font-weight: bold;
+	}
+	#experiencia p{
+		padding: 20px 60px;
+		text-align: center;
+		font-family: 'Kalam', cursive;
+		font-size: 20px;
+	}
+	/*Educacion*/
+	#educacion{
+		width: 100%;
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	  	color:#000;
+	}
+	#educacion h3{
+		font-family: 'Stalemate', cursive;
+		font-size: 60px;
+		font-weight: bold;
+	}
+	#educacion .card{
+		text-align: center;
+		font-family: 'Kalam', cursive;
+		font-size: 15px;
+		width: 70%;
+		margin: auto;
+	}
+	#educacion .card-title{
+		font-family: serif; , cursive;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#educacion .col-md-4{
+		display: flex;
+	    align-items: center;
+	}
+	.img-fluid {
+	    max-width: 80%;
+	    height: auto;
+	    margin: auto;
+	}
+	/*Hard & soft skill*/
+	.habilidades h3{
+		margin-top: 70px;
+		margin-bottom: 40px;
+		font-family: 'Stalemate', cursive;
+		font-size: 60px;
+		font-weight: bold;
+	}
+	.container{
+        padding: 2.5rem;
+        flex-direction: column;
+        margin-top: -28px;
+    }
+    .container .card{
+    	margin: 5% 12%;
+    }
+	.porcentaje{
+        height: auto;
+        margin-left: 30px;
+        flex-flow: row wrap;
+    }
+	.habilidad h4{
+		margin-top: 40px;
+		margin-bottom: 20px;
+		font-family: 'Rock Salt', cursive;
+	}
+	/*Proyectos*/
+	#proyecto .card{
+		width: 70%;
+		margin: auto;
+	}
+	/*Footer*/
+	#footer {
+		position: relative;
+		left: 14%;
+	  	color:white;
+	}
+	/*Modal*/
+	.modal-open {
+	    padding-right: 0% !important;
+    }
+	.modal-backdrop.show {
+    	min-width: 100%;
+    	min-height: 100%;
+	}
+	.modal-dialog {
+		width: 304px;
+		margin: auto 29%;
+	}
+	/*ADMI*/
+	/*boton de edicion de Acerca de mi*/
+	.lapizDos{
+		top: 55%;
+    	margin-left: 1.5rem;
+	}
+	/*boton de edicion de Experiencia*/
+	.lapizTres{
+		top: 146%;
+		margin-left: 1.5rem;
+	}
+	/*boton de edicion de Educacion*/
+	.lapizCuatro{
+		top: 234%;
+		margin-left: 1.5rem;
+	}
+	/*boton de edicion de Hard & soft skill*/
+	.lapizCinco{
+		top: 334%;
+		margin-left: 1.5rem;
+	}
+	/*boton de edicion de Proyectos*/
+	.lapizSeis{
+		top: 657%;
+		margin-left: 1.5rem;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1023px){
+	/*Barra de navegación - Pagina info*/
+	.container-fluid{
+		display: flex;
+		flex-wrap: initial !important;
+	    align-items: center;
+	    justify-content: space-between;
+		}
+	.nav2{
+	    padding-left: 104%;
+	}
+	.logo1{
+		padding-left: 4px;
+
+	}
+	/*Banner*/
+	#banner{
+		width: 84rem;
+		height: 58rem;
+		margin-top: -391px;
+		background-size: 100% 37%;
+	}
+	.contenido-banner {
+	    display: flex;
+	    flex-direction: column;
+	    position: relative;
+	    top: 44%;
+	}
+	/*Foto de perfil*/
+	.foto {
+	    align-self: center;
+	    position: absolute;
+	    top: 22%;
+	    left: 73%;
+	    width: 190px;
+	    height: 190px;
+	    border: 2px solid #000;
+	}
+	/*CAJA*/
+	.caja{
+		margin-left: 35%;
+		width: 100%;
+		color: white;
+		background:rgba(0,0,0,0.8);
+	}
+	/*Footer*/
+	#footer {
+		position: relative;
+		left: 35%;
+	  	color:white;
+	}
+	/*Modal*/
+	.modal-open {
+	    padding-right: 0% !important;
+    }
+	.modal-backdrop.show {
+    	min-width: 100%;
+    	min-height: 100%;
+	}
+	.modal-dialog {
+		width: 304px;
+		margin: auto 66%;
+	}
+
+	/*ADMI*/
+	/*boton de edicion de Acerca de mi*/
+	.lapizDos{
+		top: 56%;
+    	margin-left: 46.5rem;
+	}
+	/*boton de edicion de Experiencia*/
+	.lapizTres{
+		top: 96%;
+    	margin-left: 46.5rem;
+	}
+	/*boton de edicion de Educacion*/
+	.lapizCuatro{
+		top: 135%;
+    	margin-left: 46.5rem;
+	}
+	/*boton de edicion de Hard & soft skill*/
+	.lapizCinco{
+		top: 182%;
+    	margin-left: 46.5rem;
+	}
+	/*boton de edicion de Proyectos*/
+	.lapizSeis{
+		top: 286%;
+    	margin-left: 46.5rem;
+	}
+}
